@@ -80,6 +80,10 @@
 			}
 		]
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lolisTop/better-change-case.git"
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
 		"compile": "webpack",
