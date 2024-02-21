@@ -18,7 +18,7 @@
 | snakeCase       | Convert a string to snake case (`foo_bar`)                 |
 | trainCase       | Convert a string to header case (`Foo-Bar`)                |
 
-![image](/src/images/animation.gif)
+![image](https://raw.githubusercontent.com/lolisTop/better-change-case/main/images/animation.gif)
 
 > You can change the order of the toggle, or remove it, according to your preference.
 
