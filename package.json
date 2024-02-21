@@ -112,6 +112,7 @@
 		]
 	},
 	"scripts": {
+		"vsce:package":"pnpm vsce package --no-dependencies --allow-missing-repository --baseImagesUrl https://github.com/lolisTop/better-change-case/raw/main/src/images/animation.gif",
 		"vscode:prepublish": "pnpm run package",
 		"compile": "webpack",
 		"watch": "webpack --watch",
@@ -130,6 +131,7 @@
 		"@typescript-eslint/parser": "^6.19.1",
 		"@vscode/test-cli": "^0.0.4",
 		"@vscode/test-electron": "^2.3.9",
+		"@types/lodash-es": "^4.17.12",
 		"eslint": "^8.56.0",
 		"ts-loader": "^9.5.1",
 		"typescript": "^5.3.3",
@@ -137,7 +139,6 @@
 		"webpack-cli": "^5.1.4"
 	},
 	"dependencies": {
-		"@types/lodash-es": "^4.17.12",
 		"change-case": "^5.4.3",
 		"lodash-es": "^4.17.21"
 	}
