@@ -35,10 +35,10 @@ export const changeCaseCommands = (context: vscode.ExtensionContext) => {
 	// 过滤出已有配置
 	const commonOptions = intersection(shortcutKeysToggleOptions, map(COMMAND_DEFINITIONS, 'label'));
 	// 根据选项筛选方法集
-	const commonCommands = filter(COMMAND_DEFINITIONS, (obj) => includes(commonOptions, obj.label));
+	const commonCommands = map(commonOptions, (obj) => COMMAND_DEFINITIONS.find((x) => x.label === obj));
 	const maxLength = commonCommands.length;
 	const count = getGlobalState(context, 'count') as number;
-	const func = commonCommands[count].func;
+	const func = commonCommands[count]?.func;
 	if (func) {
 		runCommand(func);
 	}

@@ -3,7 +3,7 @@
 	"displayName": "better-change-case",
 	"description": "Add shortcut keys based on change case",
 	 "icon": "images/icon.png",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"publisher": "lolis",
 	"engines": {
 		"vscode": "^1.86.0"
